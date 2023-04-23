@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
+    <div class="container mt-2 p-4">
+
+      <a href="index.html" class="back-icon text-danger">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+   
+      <h1 class="text-center text-light power">Movie</h1>
+
+      <div class="row mt-3 spinner">
+        <div class="spinner-border text-danger mx-auto" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <div class="row mt-4 loading">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4"
+        >
+          <div
+            class="card col-10 col-md-4 col-lg-3 overflow-hidden box-shadow box1"
+          >
+            <div class="image-wrapper">
+              <a id="poster-link" target="_blank"
+                ><img id="detail-img" class="movie-poster w-100"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="card col-md-8 col-lg-10 p-0 overflow-hidden border-1 border-dark loading box-shadow box2"
+          >
+            <div class="p-3">
+              <div
+                class="movie-title fw-bold text-center text-danger pb-2"
+                style="font-size: 20px"
+              ></div>
+              <div class="movie-text mb-3 text-center"></div>
+              <div class="movie-year mb-1"></div>
+              <div class="movie-rating mb-1"></div>
+              <div class="movie-genre mb-1"></div>
+              <div class="movie-author mb-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center g-2 loading">
+        <h5 class="text-center h5 text-danger fw-bold mb-2">Plot Summary</h5>
+        <div class="movie-plot mb-1 box-shadow box3 p-3 rounded"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="my-5">
+      <div
+        class="text-center text-light fw-bold py-1 rounded-pill bottom-text container"
+      >
+        <span>Powerd by:</span>
+        <small>
+          <a
+            href="https://www.facebook.com/phnompenhcrown.fc.7?mibextid=ZbWKwL"
+            class="fw-light"
+            >@Chann Kimlong</a
+          ></small
+        >
+      </div>
+      <!-- AddToAny BEGIN -->
+      <div class="mt-3 d-flex justify-content-center">
+        <!-- AddToAny BEGIN -->
+        <div
+          class="a2a_kit a2a_kit_size_32 a2a_default_style"
+          data-a2a-url="https://kimlong168.github.io/weather-app/"
+          data-a2a-title="Tic Tac Toe"
+        >
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_telegram"></a>
+          <a class="a2a_button_line"></a>
+          <a class="a2a_button_facebook_messenger"></a>
+        </div>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <!-- AddToAny END -->
+      </div>
+    </footer>
+
+    <!-- javascript code -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./detail.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.box-shadow {
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
+}
+.box1{
+    transform: rotate(-5deg);
+    transition: all 0.5s ease-in-out;
+}
+.box1:hover{
+    transform: scale(.9);
+}
+.box2{
+    transform: rotate(3deg);
+    background-color: transparent;
+    color: wheat;
+    /* color: white; */
+}
+
+.box3{
+    color: wheat;
+}
+
+.container{
+    background-color: #000000d0;
+    border-radius: 30px;
+}
+
+.loading{
+    display: none;
+}
+
+.back-icon{
+    cursor: pointer;
+}
